@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+          <img src="18707.jpg" align ="left" >
+<body class="body-color">
+
+<form>
+  <div style="padding: 1px;">
+    <div style="text-align: center;"> 
+      <h1 class="display-3"> Registro de Usuarios </h1>
+      <h10 > Este formulario permite registrar usuarios en el sistema </h10>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="validationDefault01">Nombre</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Ingrese su nombre">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="validationDefault02">Apellidos</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Ingrese apellidos" required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault01">Rut</label>
+          <input type="text" id="rut" name="rut"  class="form-control" maxlength="14" required oninput="checkRut(this)" placeholder="Ingrese su RUT">
+          
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Comuna</label>
+            <select class="custom-select" id="validationDefault04" required>
+              <option selected disabled value="">Ingrese su comuna</option>
+                <option value="chiquayante">Chiquayante</option>
+                <option value="concepcion">Concepcion</option>
+                <option value="coronel">Coronel</option>
+                <option value="florida">Florida</option>
+                <option value="hualpen">Hualpen</option>
+                <option value="hualqui">Hualqui</option>
+                <option value="lota">Lota</option>
+                <option value="penco">Penco</option>
+                <option value="talcahuano">Talcahuano</option>
+                <option value="tome">Tome</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault01">Dirección</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Ingrese su domicilio" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese su contrase&ntilde;a">
+          </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault01">Correo electrónico</label>
+          <input type="email" class="form-control" id="validationDefault01" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault02">Teléfono</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Ingrese su teléfono" required>
+        </div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Registrar</button>
+    </div>
+  
+  </div>
+</form>
+
+    <script src="validarRUT.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  </body>    
+</html>
